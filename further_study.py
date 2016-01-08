@@ -25,7 +25,10 @@ def custom_len(input_list):
 
     """
 
-    return 0
+    count = 0
+    for item in input_list:
+        count += 1
+    return count
 
 
 # For the next four exercises, you'll need to be clever and think about ways
@@ -51,8 +54,9 @@ def custom_append(input_list, value):
 
     """
 
-    pass
-
+    input_list[-1:-1] = [" "]
+    input_list[-2] = input_list[-1]
+    input_list[-1] = value
 
 def custom_extend(input_list, second_list):
     """
